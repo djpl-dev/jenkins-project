@@ -3,6 +3,8 @@ version: "3"
 services:
   myjenkins:
     image: tutorial/jenkins
+    container_name: jenkins
+    restart: always
     build:
       context: jenkins/
     expose:
@@ -34,6 +36,8 @@ services:
   stash:
     build: ./stash
     image: localstash:latest
+    container_name: stash
+    restart: always
     hostname: stash
     ports:
       - "10080:80"
