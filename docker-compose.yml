@@ -21,8 +21,8 @@ services:
     environment:
       - TZ=America/New_York
       - DEBIAN_FRONTEND=noninteractive
-      - GIT_USER=git_user
-      - GIT_PASS=git_token
+      - GIT_USER=djpl-dev
+      - GIT_PASS=9f400855c7650bd90e6a24a1af6328c395e911f3
       - BUILD_UID=0
       - BUILD_GID=0
       - AWS_DEFAULT_REGION=us-east-1
